@@ -1,0 +1,92 @@
+.searchBar {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    margin-right: 10px;
+}
+
+.submitButton {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #ee2f05;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #c72905;
+}
+
+.suggestions {
+    position: absolute;
+    top: 40px;
+    background: rgba(255, 255, 255, 0.6);
+    color: black;
+    width: 60%;
+    max-height: 150px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background-color: #f0f0f0;
+}
+
+.loading,
+.error {
+    position: absolute;
+    left: 85%;
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.error {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .searchBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .submitButton {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .suggestions,
+    .loading,
+    .error {
+        display: none;
+    }
+}

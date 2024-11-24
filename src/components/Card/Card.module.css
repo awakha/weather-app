@@ -1,0 +1,68 @@
+.card {
+    background-color: #374151;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.weatherInfo {
+    margin-top: 10px;
+}
+
+.temp {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.icon {
+    margin: 10px 0;
+}
+
+.condition {
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .weatherInfo {
+        font-size: 14px;
+    }
+
+    .temp {
+        font-size: 20px;
+    }
+
+    .icon {
+        margin: 8px 0;
+    }
+
+    .condition {
+        font-size: 12px;
+    }
+
+    .closeButton {
+        top: 5px;
+        right: 5px;
+        font-size: 14px;
+
+    }
+}
