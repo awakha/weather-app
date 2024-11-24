@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './WeatherList.module.css';
 import SearchBar from '../SearchBar/SearchBar';
 import Card from '../Card/Card';
 
-const WeatherList = () => {
+const WeatherList: React.FC = () => {
   const [cities, setCities] = useState<string[]>([]);
 
   const addCity = (city: string) => {
